@@ -25,7 +25,7 @@ $wgExtensionCredits['other'][] = [
 		'Sen-Sai'
 	],
 	'version' => '1.0.0',
-	'url' => 'https://www.wikibase.nl',
+	'url' => 'https://github.com/Sen-Sai/SourceProtection',
 	'descriptionmsg' => 'sourceprotection-desc',
 	'license-name' => 'GPL-2.0+'
 ];
