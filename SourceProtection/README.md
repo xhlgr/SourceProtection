@@ -6,7 +6,7 @@ It will also block the viewing of the readonly form.
 ### Compatibility
 
 * PHP 5.4+
-* MediaWiki 1.23+
+* MediaWiki 1.24+
 
 
 ### Installation
