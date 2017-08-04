@@ -38,6 +38,5 @@ $wgMessagesDirs['SourceProtection'] = __DIR__ . '/i18n';
 
 
 // Register hook
-//$wgHooks['EditPage::showReadOnlyForm:initial'][] = 'SourceProtection::doNotShowReadOnlyForm';  //onEditPage_showEditForm_initial
-$wgHooks['onEditPage_showEditForm_initial'][] = 'SourceProtection::doNotShowReadOnlyForm';
+$wgHooks['EditPage::showReadOnlyForm:initial'][] = 'SourceProtection::doNotShowReadOnlyForm';
 $wgHooks['SkinTemplateNavigation'][] = 'SourceProtection::hideSource';
