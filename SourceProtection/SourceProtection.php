@@ -23,5 +23,5 @@
  	);
  	return true;
  } else {
- 	die( 'This version of the WSssd extension requires MediaWiki 1.24+' );
+ 	die( 'This version of the SourceProtection extension requires MediaWiki 1.24+' );
  }
