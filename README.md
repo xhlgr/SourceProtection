@@ -1,6 +1,6 @@
 ## SourceProtection
 
-Removes View Source tab and (if pageForms is installed the edit-Form tab) & History tab from menu and disable action=edit function for users with no edit permissions.
+Removes View Source tab and (if pageForms is installed the edit-Form tab) & History tab from menu and disables action=edit function for users with no edit permissions.
 It will also block the viewing of the readonly form.
 
 ### Compatibility
