@@ -5,6 +5,8 @@ It will also block the viewing of the readonly form.
 
 1.1.1 Added more actions for user without edit permissions to protect the source  of a page more thoroughly.
 
+1.1.2 Checked compatibility with 1.35+. No major changes, just typos or comments added
+
 ### Compatibility
 
 * PHP 5.4+
@@ -15,9 +17,13 @@ It will also block the viewing of the readonly form.
 
 (1) Extract the files in a directory called `SourceProtection` in your `extensions/` folder.
 
-(2) Add the following code at the bottom of your "LocalSettings.php" file:
+(2a) MW1.22 or lower : Add the following code at the bottom of your "LocalSettings.php" file:
 ```
 require_once "$IP/extensions/sourceProtection/SourceProtection.php";
+```
+(2b) MW1.22 + : Add the following code at the bottom of your "LocalSettings.php" file:
+```
+wfLoadExtension( 'SourceProtection' );
 ```
 (3) Go to "Special:Version" on your wiki to verify that the extension is successfully installed.
 
