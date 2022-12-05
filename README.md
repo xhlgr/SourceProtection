@@ -2,6 +2,8 @@ This MediaWiki extension removes the ability to view the source code of a page i
 
 ## SourceProtection
 
+This Fixed deprecated methods for mediawiki 1.39.0
+
 1.1.0 Removes View Source tab and (if pageForms is installed the edit-Form tab) & History tab from menu and disables action=edit function for users with no edit permissions.
 It will also block the viewing of the readonly form.
 
