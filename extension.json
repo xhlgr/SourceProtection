@@ -19,7 +19,7 @@
 		"EditPage::showReadOnlyForm:initial": [
 			"SourceProtection::doNotShowReadOnlyForm"
 		],
-		"userCan": [
+		"getUserPermissionsErrors": [
 			"SourceProtection::disableActions"
 		],
 		"SkinTemplateNavigation": [
