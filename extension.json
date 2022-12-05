@@ -22,7 +22,7 @@
 		"getUserPermissionsErrors": [
 			"SourceProtection::disableActions"
 		],
-		"SkinTemplateNavigation": [
+		"SkinTemplateNavigation::Universal": [
 			"SourceProtection::hideSource"
 		]
 	},
