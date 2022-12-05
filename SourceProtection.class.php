@@ -32,7 +32,7 @@ class SourceProtection {
 			$title = $sktemplate->mTitle;
 		}
 
-		$user_can_edit = $title->userCan( 'edit' );
+		$user_can_edit = $title->isProtected( 'edit' );
 
 		//remove form_edit and history when edit is disabled
 		if ( $user_can_edit === false ) {
@@ -58,7 +58,7 @@ class SourceProtection {
 	 * @return bool
 	 */
 	public static function disableActions( &$title, &$wgUser, $action, &$result ) {
-		if ( in_array( 'edit', $wgUser->getRights(), true ) ) {
+		if ( $wgUser->isAllowed( 'edit' ) ) {
 			return true;
 		} else {
 			// define the actions to be blocked
@@ -104,7 +104,7 @@ class SourceProtection {
 		} else {
 			$title = $editPage->mTitle;
 		}
-		$user_can_edit = $title->userCan( 'edit' );
+		$user_can_edit = $title->isProtected( 'edit' );
 		if ( ! $user_can_edit ) {
 			$output->redirect( $editPage->getContextTitle() );
 		}
